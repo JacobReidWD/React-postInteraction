@@ -1,0 +1,88 @@
+body {
+  margin: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/456/481/273/dust-photography-black-black-sand-wallpaper-preview.jpg');
+  background-size: cover;
+}
+div.seeThru{
+  background: rgb(31,212,188);
+  background: linear-gradient(0deg, rgba(31,212,188,1) 5%, rgba(64,9,147,1) 66%);
+  background-size: cover;
+  padding-top: 30px;
+}
+div.seeThru::after {
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url('https://c4.wallpaperflare.com/wallpaper/456/481/273/dust-photography-black-black-sand-wallpaper-preview.jpg');
+  position: absolute;
+  z-index: -1;   
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.userData{
+  margin-left: 95px;
+  margin-top: 35px;
+  position: absolute;
+}
+.userData img{
+  height: 110px;
+  width: 110px;
+  border: 5px solid blue;
+  border-radius: 50%;
+  }
+.userName{
+  margin-left: 140px;
+  position: absolute;
+  color: white;
+}
+#root img{
+  height: 250px;
+  width: 400px;
+  margin-left: 30%;
+  border: 5px solid white;
+}
+#btns {
+    float: left;
+    align-items: center;
+    margin-left: 30%;
+}
+#btns ul li{
+  list-style-type: none;
+  list-style: none;
+  display: inline;
+  float: left;
+  margin-left: 20px;
+  align-items: center;
+}
+#btns ul li button{
+  padding: 10px;
+}
+.post-ctn{
+  margin-top: 90px;
+  padding-top: 150px;
+  padding-bottom: 130px;
+  background-color: gray;
+  margin-right: 20%;
+  margin-left: 10%;
+  padding-left: 10px;
+  padding-right: 20px;
+  border-radius: 35px;
+}
+#post-text{
+  margin-left: 30%;
+  height: 200px;
+  width: 400px;
+}
+.count{
+  margin-left: 0;
+}
